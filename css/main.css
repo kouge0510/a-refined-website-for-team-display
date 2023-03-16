@@ -1,0 +1,359 @@
+body { /*背景样式*/
+    background: #182941;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: -5;
+}
+#target {
+    background: #182941;
+    z-index: -5;
+    position: absolute;
+    min-height: 300%;
+    max-width: 100%;
+    max-height: 300%;
+}
+.biaoti { /*ul标题样式*/
+    list-style: none; /*用于去掉列表标记实心点*/
+    float: left;
+    position: relative;
+    min-width: 80%;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: white;
+    margin: 20px 10%;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.8;
+    animation-name: biaoti; /* 为动画设置名称 */
+    animation-duration: 1s; /* 动画时长 */
+    animation-delay: 0s; /* 动画等待0s后开始 */
+    animation-iteration-count: 1; /* 动画无限重复 */
+    animation-timing-function: ease-in-out;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+    box-shadow: 13px 10px 20px #c0c0c0;
+}
+.biaoti:hover {/*标题变大动画*/
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+@keyframes biaoti{
+    0%{
+        margin-left:-10%;
+    }
+    100%{
+        margin-left:8%;
+    }
+}
+.jianjie_1 { /*div简介样式*/
+    color: black;
+    list-style: none;
+    margin-top: 50px;
+    float: left;
+    width: 80%;
+    text-align: center;
+    background: center;
+    border-radius: 10px;
+    border-width: 3px;
+    margin-left: 9%;
+    background-color: white;
+    padding: 20px;
+    opacity: 0.8;
+    animation-name: jianjie_1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s; /* 动画等待0s后开始 */
+    animation-timing-function: ease-in-out;
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+    box-shadow: 13px 10px 20px #c0c0c0;
+}
+.jianjie_1:hover {/*简介变大动画*/
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+@keyframes jianjie_1{
+    0%{
+        margin-left:100%;
+    }
+    100%{
+        margin-left:8%;
+    }
+}
+.jianjie {/*ul简介样式*/
+    width: 100%; /*标题宽度*/  
+}
+.chengyuan { /*li成员样式*/
+    float: left;
+    width: 18%;
+    margin: 11px 3% 30px 3%;
+    color: black;
+    list-style:none;
+}
+.biaoti_1 {/*其余导航条*/
+    float: right; /*横排*/
+    position:relative;
+    margin-left:1%;
+    margin-right:2%;/*标题间距*/
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: width 1s, height 1s;
+    -moz-transition: width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+    -o-transition: width 1s, height 1s, -o-transform 1s; /* Opera */
+}
+.biaoti_1:hover {    
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg); /* Firefox 4 */
+    -webkit-transform: rotate(360deg); /* Safari and Chrome */
+    -o-transform: rotate(360deg); /* Opera */
+    
+}
+.biaoti_3 {/*下拉导航条*/
+    float: right; /*横排*/
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%; /*标题间距*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: width 1s, height 1s;
+    -moz-transition: width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+    -webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+    -o-transition: width 1s, height 1s, -o-transform 1s; /* Opera */
+}
+.biaoti_3:hover .biaoti_2{
+    display:block;
+}
+.biaoti_2 {
+    display: none;
+    width: 60%;
+    position:relative;
+    text-align: center;
+    margin-left:16%;
+    padding-top:2%;
+    
+}
+
+a:link, a:visited {
+    display: block; /*设置为块级元素*/
+    width: 80%; /*设置宽度为100%*/
+    font-weight: bold; /*设置字体为加粗*/
+    color: white; /*设置字体为白色*/
+    background-color:black; /*设置背景颜色为黑色*/
+    text-align: center; /*设置文本居中显示*/
+    padding-left: 20px; 
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;/*设置各边内边距为5像素*/
+    text-decoration: none; /*去掉文本下划线*/
+    border-radius:10px;    
+}
+a:hover, a:active {
+    background-image: linear-gradient(to right, #ffff, #000);
+    box-shadow: 0px 1px 5px #4a4a4a;
+}
+.xiaolanzai{/*小懒仔介绍配置*/
+    text-align:center;
+    float:left;
+}
+@font-face {
+    font-family: Troika; /*这里是说明调用来的字体名字*/
+    src: url(‘fonts/Troika.otf’); /*仅支持opera,safari*/  
+}
+/*字体*/
+.fonts {
+    font-family: Troika;
+    font-size:25px;   
+}
+.fonts_1{
+    font-family:Troika;
+    font-size:30px;
+    font-size-adjust:inherit;
+}
+.banner { /*左下轮播*/
+    position: relative;
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 20px;
+    box-shadow: 0px 1px 5px #4a4a4a;
+    opacity: 0.8;
+    animation-name: banner;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s; /* 动画等待0s后开始 */
+    animation-timing-function: ease-in-out;
+    box-shadow: 13px 10px 20px #c0c0c0;
+}  
+@keyframes banner{/*轮播图动画*/
+    0%{
+        margin-top:64%;
+    }
+    100%{
+        margin-top:32%;
+    }
+}
+.banner1 { /*右下轮播*/
+    float: right;
+    position: relative;
+    overflow: hidden;
+    margin-right: 3%;
+    margin-top: 3%;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 20px; /*边框粗*/
+    box-shadow: 0px 1px 5px #4a4a4a;
+    opacity: 0.8;
+    animation-name: banner;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 0s; /* 动画等待0s后开始 */
+    animation-timing-function: ease-in-out;
+    box-shadow: 13px 10px 20px #c0c0c0;
+}
+.banner  img ,.banner1 img{
+        width: 400px;        
+}
+.banner  ul, .banner1 ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+}
+.hot {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    .hot li {
+        float: left;
+    }
+/* 小圆点样式 */
+.dot {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+.dot li {
+        display: inline-block;
+        margin: 0 5px;
+        width: 48px;
+        height: 3px;
+        background: rgba(145,144,144,.5);
+        border-radius: 1px;
+        cursor: pointer;
+}
+.dot .on {
+        background-color: #fff;
+}
+/* 左右翻页箭头样式 */
+.banner .arrow ,.banner1 .arrow {
+    display: none;
+    
+}
+
+.banner .arrow span,.banner1.arrow span{
+        display: block;
+        width: 50px;
+        height: 100px;
+        background: rgba(0,0,0,.6);
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 100px;
+        cursor: pointer;
+}
+.banner .arrow .prev ,.banner1.arrow.prev{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -50px;
+}
+.banner .arrow .next ,.banner .arrow .next{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -50px;
+}
+.jieshao1 { /*左下边框*/
+    position: relative;
+    z-index: 2;
+    float:left;
+    margin-left:1%;
+    margin-top:5%;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 2em;
+    color: black;
+    padding-left: 10px;
+    opacity: 0.8;
+    transition: All 1s ease-in-out;
+    -webkit-transition: All 1s ease-in-out;
+    -moz-transition: All 1s ease-in-out;
+    -o-transition: All 1s ease-in-out;
+}
+.jieshao1:hover,.jieshao2:hover {/*左下右下边框动画*/
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+.jieshao2 { /*右下边框*/
+    position: relative;
+    z-index: 2;
+    float:right;
+    color: black;
+    margin-top:5%;
+    margin-right:1%;
+    border-radius: 10px;
+    padding-bottom: 2em;
+    background-color: white;
+    padding-left: 10px;
+    opacity: 0.8;
+    transition: All 1s ease-in-out;
+    -webkit-transition: All 1s ease-in-out;
+    -moz-transition: All 1s ease-in-out;
+    -o-transition: All 1s ease-in-out;
+}
+.data{ /*统计数据*/
+    position: relative;
+    z-index: 2;
+    margin-top: 5%;
+    margin-left:3%;
+    margin-right:3%;
+    float: left;
+    text-align:center;
+    font-size: 40px;
+    color: black;
+    border-style:double;
+    border-width:30px;
+    background-color:white;
+    border-radius:20px;
+    opacity:0.8;
+    border-color: white;
+    
+}
